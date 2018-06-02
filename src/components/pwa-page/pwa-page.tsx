@@ -1,10 +1,10 @@
 import { Component } from '@stencil/core';
 
 @Component({
-  tag: 'pwas-page',
-  styleUrl: 'pwas-page.scss'
+  tag: 'pwa-page',
+  styleUrl: 'pwa-page.scss'
 })
-export class pwasPage {
+export class pwaPage {
 
   demos = [
     {
@@ -31,7 +31,7 @@ export class pwasPage {
   ];
 
   constructor() {
-    document.title = `PWAs`;
+    document.title = `PWA`;
   }
 
   render() {
@@ -92,7 +92,7 @@ export class pwasPage {
           <h4>Routing</h4>
           <p>
             The Ionic PWA Toolkit uses the Stencil Router.
-            <stencil-route-link url="docs/routing" class="block">
+            <stencil-route-link url="/doc/routing" class="block">
               Read more about the Stencil Router
             </stencil-route-link>
           </p>
@@ -102,7 +102,7 @@ export class pwasPage {
           <p>
             When your run <code>npm run build</code> we automatically generate a Service Worker for you using <a href="https://workboxjs.org/">Workbox</a> that handles pre-caching your assets.
 
-            <stencil-route-link url="/docs/service-workers" class="block">
+            <stencil-route-link url="/doc/service-workers" class="block">
               Read more about Service Workers
             </stencil-route-link>
           </p>

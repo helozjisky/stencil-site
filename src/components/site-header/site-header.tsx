@@ -59,19 +59,21 @@ export class SiteHeader {
         <stencil-route-link url="/" class="logo-link">
           <img class="logo" alt="Stencil" src="/assets/img/stencil-logo-new.svg" />
         </stencil-route-link>
-
         <div class="header-menu">
-          <stencil-route-link urlMatch="/docs" url="/docs/introduction" onClick={() => { this.hideNav() }}>
-            Docs
+          <stencil-route-link url="/product" exact={true} onClick={() => { this.hideNav() }}>
+            产品
           </stencil-route-link>
-          <stencil-route-link url="/demos"  exact={true} onClick={() => { this.hideNav() }}>
-            Demos
+          <stencil-route-link url="/demo"  exact={true} onClick={() => { this.hideNav() }}>
+            案例
+          </stencil-route-link>
+          <stencil-route-link urlMatch="/doc" url="/doc/introduction" onClick={() => { this.hideNav() }}>
+            文档
           </stencil-route-link>
           <stencil-route-link url="/pwa" exact={true} onClick={() => { this.hideNav() }}>
             PWAs
           </stencil-route-link>
-          <stencil-route-link url="/resources"  exact={true} onClick={() => { this.hideNav() }}>
-            Resources
+          <stencil-route-link url="/resource"  exact={true} onClick={() => { this.hideNav() }}>
+            资源
           </stencil-route-link>
           <a class="link--external" href="https://github.com/ionic-team/stencil">
             GitHub <app-icon name="targetblank"></app-icon>

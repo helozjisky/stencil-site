@@ -2,18 +2,20 @@
 
 In most cases, the `stencil.config.js` file does not require any customization since Stencil comes with great default values out-of-the-box. In general, it's preferred to keep the config as minimal as possible. In fact, you could even delete the `stencil.config.js` file entirely and an app would compile just fine. But at the same time, the compiler can be configured at the lowest levels using this config. Below are the many *optional* config properites.
 
-- [bundles](#bundles)
-- [copy](#copy)
-- [enableCache](#enableCache)
-- [globalStyle](#globalStyle)
-- [hashFileNames](#hashFileNames)
-- [hashedFileNameLength](#hashedFileNameLength)
-- [namespace](#namespace)
-- [outputTargets](#outputTargets)
-  - [dist](#dist)
-  - [www](#www)
-- [plugins](#plugins)
-- [srcDir](#srcDir)
+- [Stencil Config](#stencil-config)
+  - [`bundles`](#bundles)
+  - [`copy`](#copy)
+  - [`enableCache`](#enablecache)
+  - [`globalStyle`](#globalstyle)
+  - [`hashFileNames`](#hashfilenames)
+  - [`hashedFileNameLength`](#hashedfilenamelength)
+  - [`namespace`](#namespace)
+  - [`outputTargets`](#outputtargets)
+  - [`outputTarget: dist`](#outputtarget--dist)
+  - [`outputTarget: www`](#outputtarget--www)
+  - [`plugins`](#plugins)
+      - [Related Plugins](#related-plugins)
+  - [`srcDir`](#srcdir)
 
 
 Example `stencil.config.js`:
@@ -45,11 +47,11 @@ bundles: [
 
 The `copy` config is an array of objects that defines any files or folders that should be copied over to the build directory. Each object in the array must include a `src` property which can be either an absolute path, a relative path or a glob pattern. The config can also provide an optional `dest` property which can be either an absolute path or a path relative to the build directory. Also note that any files within `src/assets` are automatically copied to `www/assets` for convenience.
 
-In the copy config below, it will copy the entire directory from `src/docs-content` over to `www/docs-content`.
+In the copy config below, it will copy the entire directory from `src/doc-content` over to `www/doc-content`.
 
 ```js
   copy: [
-    { src: 'docs-content' }
+    { src: 'doc-content' }
   ]
 ```
 

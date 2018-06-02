@@ -173,30 +173,30 @@ declare global {
 declare global {
 
   namespace StencilComponents {
-    interface DemosPage {
+    interface DemoPage {
 
     }
   }
 
-  interface HTMLDemosPageElement extends StencilComponents.DemosPage, HTMLStencilElement {}
+  interface HTMLDemoPageElement extends StencilComponents.DemoPage, HTMLStencilElement {}
 
-  var HTMLDemosPageElement: {
-    prototype: HTMLDemosPageElement;
-    new (): HTMLDemosPageElement;
+  var HTMLDemoPageElement: {
+    prototype: HTMLDemoPageElement;
+    new (): HTMLDemoPageElement;
   };
   interface HTMLElementTagNameMap {
-    'demos-page': HTMLDemosPageElement;
+    'demo-page': HTMLDemoPageElement;
   }
   interface ElementTagNameMap {
-    'demos-page': HTMLDemosPageElement;
+    'demo-page': HTMLDemoPageElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      'demos-page': JSXElements.DemosPageAttributes;
+      'demo-page': JSXElements.DemoPageAttributes;
     }
   }
   namespace JSXElements {
-    export interface DemosPageAttributes extends HTMLAttributes {
+    export interface DemoPageAttributes extends HTMLAttributes {
 
     }
   }
@@ -348,30 +348,30 @@ declare global {
 declare global {
 
   namespace StencilComponents {
-    interface PwasPage {
+    interface ProductPage {
 
     }
   }
 
-  interface HTMLPwasPageElement extends StencilComponents.PwasPage, HTMLStencilElement {}
+  interface HTMLProductPageElement extends StencilComponents.ProductPage, HTMLStencilElement {}
 
-  var HTMLPwasPageElement: {
-    prototype: HTMLPwasPageElement;
-    new (): HTMLPwasPageElement;
+  var HTMLProductPageElement: {
+    prototype: HTMLProductPageElement;
+    new (): HTMLProductPageElement;
   };
   interface HTMLElementTagNameMap {
-    'pwas-page': HTMLPwasPageElement;
+    'product-page': HTMLProductPageElement;
   }
   interface ElementTagNameMap {
-    'pwas-page': HTMLPwasPageElement;
+    'product-page': HTMLProductPageElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      'pwas-page': JSXElements.PwasPageAttributes;
+      'product-page': JSXElements.ProductPageAttributes;
     }
   }
   namespace JSXElements {
-    export interface PwasPageAttributes extends HTMLAttributes {
+    export interface ProductPageAttributes extends HTMLAttributes {
 
     }
   }
@@ -381,30 +381,63 @@ declare global {
 declare global {
 
   namespace StencilComponents {
-    interface ResourcesPage {
+    interface PwaPage {
 
     }
   }
 
-  interface HTMLResourcesPageElement extends StencilComponents.ResourcesPage, HTMLStencilElement {}
+  interface HTMLPwaPageElement extends StencilComponents.PwaPage, HTMLStencilElement {}
 
-  var HTMLResourcesPageElement: {
-    prototype: HTMLResourcesPageElement;
-    new (): HTMLResourcesPageElement;
+  var HTMLPwaPageElement: {
+    prototype: HTMLPwaPageElement;
+    new (): HTMLPwaPageElement;
   };
   interface HTMLElementTagNameMap {
-    'resources-page': HTMLResourcesPageElement;
+    'pwa-page': HTMLPwaPageElement;
   }
   interface ElementTagNameMap {
-    'resources-page': HTMLResourcesPageElement;
+    'pwa-page': HTMLPwaPageElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      'resources-page': JSXElements.ResourcesPageAttributes;
+      'pwa-page': JSXElements.PwaPageAttributes;
     }
   }
   namespace JSXElements {
-    export interface ResourcesPageAttributes extends HTMLAttributes {
+    export interface PwaPageAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface ResourcePage {
+
+    }
+  }
+
+  interface HTMLResourcePageElement extends StencilComponents.ResourcePage, HTMLStencilElement {}
+
+  var HTMLResourcePageElement: {
+    prototype: HTMLResourcePageElement;
+    new (): HTMLResourcePageElement;
+  };
+  interface HTMLElementTagNameMap {
+    'resource-page': HTMLResourcePageElement;
+  }
+  interface ElementTagNameMap {
+    'resource-page': HTMLResourcePageElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'resource-page': JSXElements.ResourcePageAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface ResourcePageAttributes extends HTMLAttributes {
 
     }
   }

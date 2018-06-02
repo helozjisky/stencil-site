@@ -1,10 +1,10 @@
 import { Component } from '@stencil/core';
 
 @Component({
-  tag: 'demos-page',
-  styleUrl: 'demos-page.scss'
+  tag: 'demo-page',
+  styleUrl: 'demo-page.scss'
 })
-export class DemosPage {
+export class DemoPage {
 
   demos = [
     {
@@ -45,13 +45,13 @@ export class DemosPage {
   ];
 
   constructor() {
-    document.title = `Stencil Demos`;
+    document.title = `Stencil Demo`;
   }
 
   render() {
     return (
       <div>
-        <h1 class="headline measure-md">Awesome demos of apps built using Stencil and Ionic</h1>
+        <h1 class="headline measure-md"></h1>
         <div class="demo-card-list">
           {this.demos.map(demo => {
             return (

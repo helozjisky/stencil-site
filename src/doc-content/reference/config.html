@@ -1,20 +1,24 @@
 <h1 id="stencil-config">Stencil Config</h1>
 <p>In most cases, the <code>stencil.config.js</code> file does not require any customization since Stencil comes with great default values out-of-the-box. In general, it&#39;s preferred to keep the config as minimal as possible. In fact, you could even delete the <code>stencil.config.js</code> file entirely and an app would compile just fine. But at the same time, the compiler can be configured at the lowest levels using this config. Below are the many <em>optional</em> config properites.</p>
 <ul>
-<li><a href="#bundles">bundles</a></li>
-<li><a href="#copy">copy</a></li>
-<li><a href="#enableCache">enableCache</a></li>
-<li><a href="#globalStyle">globalStyle</a></li>
-<li><a href="#hashFileNames">hashFileNames</a></li>
-<li><a href="#hashedFileNameLength">hashedFileNameLength</a></li>
-<li><a href="#namespace">namespace</a></li>
-<li><a href="#outputTargets">outputTargets</a><ul>
-<li><a href="#dist">dist</a></li>
-<li><a href="#www">www</a></li>
+<li><a href="#stencil-config">Stencil Config</a><ul>
+<li><a href="#bundles"><code>bundles</code></a></li>
+<li><a href="#copy"><code>copy</code></a></li>
+<li><a href="#enablecache"><code>enableCache</code></a></li>
+<li><a href="#globalstyle"><code>globalStyle</code></a></li>
+<li><a href="#hashfilenames"><code>hashFileNames</code></a></li>
+<li><a href="#hashedfilenamelength"><code>hashedFileNameLength</code></a></li>
+<li><a href="#namespace"><code>namespace</code></a></li>
+<li><a href="#outputtargets"><code>outputTargets</code></a></li>
+<li><a href="#outputtarget--dist"><code>outputTarget: dist</code></a></li>
+<li><a href="#outputtarget--www"><code>outputTarget: www</code></a></li>
+<li><a href="#plugins"><code>plugins</code></a><ul>
+<li><a href="#related-plugins">Related Plugins</a></li>
 </ul>
 </li>
-<li><a href="#plugins">plugins</a></li>
-<li><a href="#srcDir">srcDir</a></li>
+<li><a href="#srcdir"><code>srcDir</code></a></li>
+</ul>
+</li>
 </ul>
 <p>Example <code>stencil.config.js</code>:</p>
 <pre><code class="lang-js">exports.<span class="hljs-built_in">config</span> = {
@@ -34,9 +38,9 @@
 <p><a name="copy"></a></p>
 <h2 id="copy"><code>copy</code></h2>
 <p>The <code>copy</code> config is an array of objects that defines any files or folders that should be copied over to the build directory. Each object in the array must include a <code>src</code> property which can be either an absolute path, a relative path or a glob pattern. The config can also provide an optional <code>dest</code> property which can be either an absolute path or a path relative to the build directory. Also note that any files within <code>src/assets</code> are automatically copied to <code>www/assets</code> for convenience.</p>
-<p>In the copy config below, it will copy the entire directory from <code>src/docs-content</code> over to <code>www/docs-content</code>.</p>
+<p>In the copy config below, it will copy the entire directory from <code>src/doc-content</code> over to <code>www/doc-content</code>.</p>
 <pre><code class="lang-js">  <span class="hljs-keyword">copy</span><span class="bash">: [
-</span>    { src: <span class="hljs-string">'docs-content'</span> }
+</span>    { src: <span class="hljs-string">'doc-content'</span> }
   ]
 </code></pre>
 <p><a name="enableCache"></a></p>

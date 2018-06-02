@@ -11,7 +11,7 @@ export class LandingPage {
   @Prop({ context: 'isServer' }) private isServer: boolean;
 
   constructor() {
-    document.title = `Stencil`;
+    document.title = `biz-app.top`;
   }
 
   componentDidLoad() {
@@ -59,11 +59,11 @@ export class LandingPage {
           <h1 id="action-call">The magical, reusable web component compiler</h1>
 
           <section id="buttons">
-            <stencil-route-link url="/docs/getting-started">
+            <stencil-route-link url="/doc/getting-started">
               <button id="get-started"> Get Started </button>
             </stencil-route-link>
 
-            <stencil-route-link url="/docs/introduction">
+            <stencil-route-link url="/doc/introduction">
               <button id="learn-more"> Learn More </button>
             </stencil-route-link>
 
@@ -79,17 +79,17 @@ export class LandingPage {
 
         <section id="three-points">
           <div class="point-card simple">
-            <h2>Simple</h2>
+            <h2>简单易用</h2>
             <p>With intentionally small tooling,a tiny API, zero configuration, and TypeScript support, you're set.</p>
           </div>
 
           <div class="point-card performant">
-            <h2>Performant</h2>
+            <h2>快速响应</h2>
             <p>6kb min+gzip runtime, server side rendering, and the raw power of native Web Components.</p>
           </div>
 
           <div class="point-card future-proof">
-            <h2>Future proof</h2>
+            <h2>面向未来</h2>
             <p>Build versatile apps and components based 100% on web standards. Break free of Framework Churn.</p>
           </div>
         </section>

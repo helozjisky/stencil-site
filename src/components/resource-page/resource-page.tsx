@@ -1,10 +1,10 @@
 import { Component } from '@stencil/core';
 
 @Component({
-  tag: 'resources-page',
-  styleUrl: 'resources-page.scss'
+  tag: 'resource-page',
+  styleUrl: 'resource-page.scss'
 })
-export class ResourcesPage {
+export class ResourcePage {
 
   LINKS = {
     TEMPLATES: [

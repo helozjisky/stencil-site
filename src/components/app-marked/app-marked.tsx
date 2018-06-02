@@ -20,7 +20,7 @@ export class AppMarked {
   fetchNewContent() {
     if (this.doc !== undefined) {
       const doc = document;
-      return fetch(`/docs-content/${this.doc}`)
+      return fetch(`/doc-content/${this.doc}`)
         .then(response => response.text())
         .then(data => {
           this.content = data;
@@ -29,7 +29,7 @@ export class AppMarked {
           el.innerHTML = data;
 
           const headerEl = el.querySelector('h1');
-          doc.title = (headerEl && headerEl.textContent + ' - Stencil') || 'Stencil';
+          doc.title = (headerEl && headerEl.textContent + ' - biz-app.top') || 'biz-app.top';
 
           // requestAnimationFrame is not available for preRendering
           // or SSR, so only run this in the browser

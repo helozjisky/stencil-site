@@ -71,7 +71,7 @@ export class App {
               <stencil-route-switch scrollTopOffset={0}>
                 <stencil-route component="landing-page" exact={true} />
                 <stencil-route
-                  url="/docs/:pageName"
+                  url="/doc/:pageName"
                   routeRender={(props: { [key: string]: any }) => {
                     const map = {
                       'introduction': 'introduction/why-stencil.html',
@@ -117,9 +117,10 @@ export class App {
                     );
                   }}
                 />
-                <stencil-route url="/demos" component="demos-page" />
-                <stencil-route url="/pwa" component="pwas-page" />
-                <stencil-route url="/resources" component="resources-page" />
+                <stencil-route url="/product" component="product-page" />
+                <stencil-route url="/demo" component="demo-page" />
+                <stencil-route url="/pwa" component="pwa-page" />
+                <stencil-route url="/resource" component="resource-page" />
 
                 <stencil-route component='notfound-page'></stencil-route>
               </stencil-route-switch>
@@ -129,15 +130,15 @@ export class App {
             <div class="container">
               <div class="footer__open-source">
                 <a
-                  href="http://ionicframework.com/"
-                  title="IonicFramework.com"
+                  href="http://biz-app.top/"
+                  title="biz-app.top"
                   rel="noopener">
                   <img
                     src="/assets/img/ionic-os-logo.png"
-                    alt="Ionic Open Source Logo" />
+                    alt="biz-app.top Logo" />
                 </a>
                 <p>
-                  Released under <span id="mit">MIT License</span> | Copyright @ 2018
+                  小程序服务商 | Copyright @ 2018
                 </p>
               </div>
 
